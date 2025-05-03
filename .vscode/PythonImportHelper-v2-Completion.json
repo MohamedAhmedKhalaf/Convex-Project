@@ -1,5 +1,13 @@
 [
     {
+        "label": "width",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -8,57 +16,326 @@
         "documentation": {}
     },
     {
-        "label": "json",
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.io",
+        "description": "plotly.io",
+        "detail": "plotly.io",
+        "documentation": {}
+    },
+    {
+        "label": "to_html",
+        "importPath": "plotly.io",
+        "description": "plotly.io",
+        "isExtraImport": true,
+        "detail": "plotly.io",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.subplots",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.subplots",
+        "description": "plotly.subplots",
+        "detail": "plotly.subplots",
+        "documentation": {}
+    },
+    {
+        "label": "make_subplots",
+        "importPath": "plotly.subplots",
+        "description": "plotly.subplots",
+        "isExtraImport": true,
+        "detail": "plotly.subplots",
+        "documentation": {}
+    },
+    {
+        "label": "networkx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "Back-End.main",
-        "description": "Back-End.main",
-        "peekOfCode": "app = FastAPI()\n@app.get('/')\nasync def root():\n  return {'test':'done'}",
-        "detail": "Back-End.main",
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "app = FastAPI()\ntemplates = Jinja2Templates(directory=\"templates\")\nhost = \"127.0.0.1\"\nport = 8099\n# ------------ Functions and Logic -------------------\n# Load data\ndf = pd.read_csv('../BostonHousing.csv')\n# Creating the target column\n# Feature weights and desirability calculation (as in your original code)\nfeatures_for_quality = ['lstat', 'rm', 'nox', 'dis', 'ptratio', 'crim']",
+        "detail": "front-back.main",
         "documentation": {}
     },
     {
-        "label": "_Known",
-        "kind": 6,
-        "importPath": "Front-End.node_modules.flatted.python.flatted",
-        "description": "Front-End.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
-        "detail": "Front-End.node_modules.flatted.python.flatted",
+        "label": "templates",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\nhost = \"127.0.0.1\"\nport = 8099\n# ------------ Functions and Logic -------------------\n# Load data\ndf = pd.read_csv('../BostonHousing.csv')\n# Creating the target column\n# Feature weights and desirability calculation (as in your original code)\nfeatures_for_quality = ['lstat', 'rm', 'nox', 'dis', 'ptratio', 'crim']\nfeature_weights = {'lstat': -0.74, 'rm': 0.70, 'nox': -0.43, 'dis': 0.25, 'ptratio': -0.51, 'crim': -0.39}",
+        "detail": "front-back.main",
         "documentation": {}
     },
     {
-        "label": "_String",
-        "kind": 6,
-        "importPath": "Front-End.node_modules.flatted.python.flatted",
-        "description": "Front-End.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
-        "detail": "Front-End.node_modules.flatted.python.flatted",
+        "label": "host",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "host = \"127.0.0.1\"\nport = 8099\n# ------------ Functions and Logic -------------------\n# Load data\ndf = pd.read_csv('../BostonHousing.csv')\n# Creating the target column\n# Feature weights and desirability calculation (as in your original code)\nfeatures_for_quality = ['lstat', 'rm', 'nox', 'dis', 'ptratio', 'crim']\nfeature_weights = {'lstat': -0.74, 'rm': 0.70, 'nox': -0.43, 'dis': 0.25, 'ptratio': -0.51, 'crim': -0.39}\nscaler = StandardScaler()",
+        "detail": "front-back.main",
         "documentation": {}
     },
     {
-        "label": "parse",
-        "kind": 2,
-        "importPath": "Front-End.node_modules.flatted.python.flatted",
-        "description": "Front-End.node_modules.flatted.python.flatted",
-        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
-        "detail": "Front-End.node_modules.flatted.python.flatted",
+        "label": "port",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "port = 8099\n# ------------ Functions and Logic -------------------\n# Load data\ndf = pd.read_csv('../BostonHousing.csv')\n# Creating the target column\n# Feature weights and desirability calculation (as in your original code)\nfeatures_for_quality = ['lstat', 'rm', 'nox', 'dis', 'ptratio', 'crim']\nfeature_weights = {'lstat': -0.74, 'rm': 0.70, 'nox': -0.43, 'dis': 0.25, 'ptratio': -0.51, 'crim': -0.39}\nscaler = StandardScaler()\nscaled_features = scaler.fit_transform(df[features_for_quality])",
+        "detail": "front-back.main",
         "documentation": {}
     },
     {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "Front-End.node_modules.flatted.python.flatted",
-        "description": "Front-End.node_modules.flatted.python.flatted",
-        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
-        "detail": "Front-End.node_modules.flatted.python.flatted",
+        "label": "df",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "df = pd.read_csv('../BostonHousing.csv')\n# Creating the target column\n# Feature weights and desirability calculation (as in your original code)\nfeatures_for_quality = ['lstat', 'rm', 'nox', 'dis', 'ptratio', 'crim']\nfeature_weights = {'lstat': -0.74, 'rm': 0.70, 'nox': -0.43, 'dis': 0.25, 'ptratio': -0.51, 'crim': -0.39}\nscaler = StandardScaler()\nscaled_features = scaler.fit_transform(df[features_for_quality])\nscaled_df = pd.DataFrame(scaled_features, columns=features_for_quality)\nfor col in feature_weights:\n    scaled_df[col] = scaled_df[col] * feature_weights[col]",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "features_for_quality",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "features_for_quality = ['lstat', 'rm', 'nox', 'dis', 'ptratio', 'crim']\nfeature_weights = {'lstat': -0.74, 'rm': 0.70, 'nox': -0.43, 'dis': 0.25, 'ptratio': -0.51, 'crim': -0.39}\nscaler = StandardScaler()\nscaled_features = scaler.fit_transform(df[features_for_quality])\nscaled_df = pd.DataFrame(scaled_features, columns=features_for_quality)\nfor col in feature_weights:\n    scaled_df[col] = scaled_df[col] * feature_weights[col]\nscaled_df['desirability_score'] = scaled_df.sum(axis=1)\nthreshold = scaled_df['desirability_score'].median()\ndf['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "feature_weights",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "feature_weights = {'lstat': -0.74, 'rm': 0.70, 'nox': -0.43, 'dis': 0.25, 'ptratio': -0.51, 'crim': -0.39}\nscaler = StandardScaler()\nscaled_features = scaler.fit_transform(df[features_for_quality])\nscaled_df = pd.DataFrame(scaled_features, columns=features_for_quality)\nfor col in feature_weights:\n    scaled_df[col] = scaled_df[col] * feature_weights[col]\nscaled_df['desirability_score'] = scaled_df.sum(axis=1)\nthreshold = scaled_df['desirability_score'].median()\ndf['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)\ncorrelation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "scaler = StandardScaler()\nscaled_features = scaler.fit_transform(df[features_for_quality])\nscaled_df = pd.DataFrame(scaled_features, columns=features_for_quality)\nfor col in feature_weights:\n    scaled_df[col] = scaled_df[col] * feature_weights[col]\nscaled_df['desirability_score'] = scaled_df.sum(axis=1)\nthreshold = scaled_df['desirability_score'].median()\ndf['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)\ncorrelation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)\n# 3- ",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "scaled_features",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "scaled_features = scaler.fit_transform(df[features_for_quality])\nscaled_df = pd.DataFrame(scaled_features, columns=features_for_quality)\nfor col in feature_weights:\n    scaled_df[col] = scaled_df[col] * feature_weights[col]\nscaled_df['desirability_score'] = scaled_df.sum(axis=1)\nthreshold = scaled_df['desirability_score'].median()\ndf['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)\ncorrelation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)\n# 3- \n# ---------- Routes --------------------------",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "scaled_df",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "scaled_df = pd.DataFrame(scaled_features, columns=features_for_quality)\nfor col in feature_weights:\n    scaled_df[col] = scaled_df[col] * feature_weights[col]\nscaled_df['desirability_score'] = scaled_df.sum(axis=1)\nthreshold = scaled_df['desirability_score'].median()\ndf['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)\ncorrelation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)\n# 3- \n# ---------- Routes --------------------------\n@app.get('/')",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "scaled_df['desirability_score']",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "scaled_df['desirability_score'] = scaled_df.sum(axis=1)\nthreshold = scaled_df['desirability_score'].median()\ndf['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)\ncorrelation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)\n# 3- \n# ---------- Routes --------------------------\n@app.get('/')\nasync def root():\n  return {'test':'done'}\n@app.get('/Analysis')",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "threshold = scaled_df['desirability_score'].median()\ndf['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)\ncorrelation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)\n# 3- \n# ---------- Routes --------------------------\n@app.get('/')\nasync def root():\n  return {'test':'done'}\n@app.get('/Analysis')\nasync def analysis(request: Request):",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "df['desirability']",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "df['desirability'] = (scaled_df['desirability_score'] > threshold).astype(int)\ncorrelation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)\n# 3- \n# ---------- Routes --------------------------\n@app.get('/')\nasync def root():\n  return {'test':'done'}\n@app.get('/Analysis')\nasync def analysis(request: Request):\n    # Data to Dict to show it in the website ",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "correlation_with_desirability",
+        "kind": 5,
+        "importPath": "front-back.main",
+        "description": "front-back.main",
+        "peekOfCode": "correlation_with_desirability = df.corr()['desirability'].abs().sort_values(ascending=False)\n# 3- \n# ---------- Routes --------------------------\n@app.get('/')\nasync def root():\n  return {'test':'done'}\n@app.get('/Analysis')\nasync def analysis(request: Request):\n    # Data to Dict to show it in the website \n    data = df.to_dict(orient=\"records\")",
+        "detail": "front-back.main",
+        "documentation": {}
+    },
+    {
+        "label": "fig_dist1",
+        "kind": 5,
+        "importPath": "front-back.tempCodeRunnerFile",
+        "description": "front-back.tempCodeRunnerFile",
+        "peekOfCode": "fig_dist1 = go.Figure(data=[go.Histogram(x=df['crim'], nbinsx=30)])\n    fig_dist1.update_layout(\n        title_text=\"Distribution of crim\", xaxis_title=\"crim\", yaxis_title=\"Count\", width=600, height=400,\n        plot_bgcolor='rgba(0,0,0,0)',\n        paper_bgcolor='rgba(0,0,0,0)',\n        font=dict(color='white'),  \n        title_font=dict(color='white'),  \n        xaxis=dict(tickfont=dict(color='white')), \n        yaxis=dict(tickfont=dict(color='white'))  \n        )",
+        "detail": "front-back.tempCodeRunnerFile",
         "documentation": {}
     }
 ]
